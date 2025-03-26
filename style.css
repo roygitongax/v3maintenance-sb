@@ -1,0 +1,155 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Headline */
+  .headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #743a1d;
+    opacity: 0;
+    animation: fadeInDown 1s forwards;
+  }
+  
+  /* Message */
+  .message {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  /* Email Form */
+  form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1s;
+  }
+  form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    transition: border-color 0.3s;
+  }
+  form input[type="email"]:focus {
+    border-color: #743a1d;
+    outline: none;
+  }
+  form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #743a1d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  form button:hover {
+    background-color: #5a2d15;
+  }
+  
+  /* Spinner Animation */
+  .spinner {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .spinner > div {
+    width: 15px;
+    height: 15px;
+    background-color: #743a1d;
+    border-radius: 100%;
+    display: inline-block;
+    animation: bouncedelay 1.4s infinite ease-in-out both;
+  }
+  .spinner .bounce1 {
+    animation-delay: -0.32s;
+  }
+  .spinner .bounce2 {
+    animation-delay: -0.16s;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes bouncedelay {
+    0%, 80%, 100% { transform: scale(0); }  
+    40% { transform: scale(1.0); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .headline {
+      font-size: 2rem;
+    }
+    .message {
+      font-size: 1rem;
+    }
+    form {
+      flex-direction: column;
+    }
+    form input[type="email"] {
+      width: 100%;
+    }
+    form button {
+      width: 100%;
+    }
+  }
+  
