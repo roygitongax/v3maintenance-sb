@@ -55,6 +55,7 @@
     animation-delay: 1s;
   }
   form input[type="email"] {
+    font-family: 'Montserrat', 'Gill Sans', sans-serif;
     padding: 10px;
     font-size: 1rem;
     border: 2px solid #ccc;
@@ -67,6 +68,7 @@
     outline: none;
   }
   form button {
+    font-family: 'Montserrat', 'Gill Sans', sans-serif;
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #743a1d;
@@ -91,7 +93,7 @@
   .spinner > div {
     width: 15px;
     height: 15px;
-    background-color: #743a1d;
+    background-color: #405826;
     border-radius: 100%;
     display: inline-block;
     animation: bouncedelay 1.4s infinite ease-in-out both;
