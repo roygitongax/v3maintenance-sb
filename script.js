@@ -1,6 +1,6 @@
-document.getElementById("email-form").addEventListener("submit", async function (e) {
+document.getElementById("notifyForm").addEventListener("submit", async function (e) {
   e.preventDefault();
-  const email = document.getElementById("email-input").value;
+  const email = document.getElementById("emailInput").value;
 
   const response = await fetch("https://rgx-sgworker.roygitonga27.workers.dev/", {
     method: "POST",
