@@ -6,8 +6,8 @@
   }
   body {
     font-family: 'Roboto', sans-serif;
-  background: linear-gradient(rgba(116, 49, 29, 0.7), rgba(116, 49, 29, 0.7)),
-              url('https://drive.google.com/uc?id=1_4LhsEcS9vM-EUZ--RRx3AjceMGUAeGR') no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+              url('https://imgur.com/a/62SU0vN') no-repeat center center fixed;
   background-size: cover;
   color: #fff; /* Using white text for better contrast */
   display: flex;
