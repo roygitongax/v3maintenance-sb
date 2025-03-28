@@ -104,6 +104,23 @@
   .spinner .bounce2 {
     animation-delay: -0.16s;
   }
+/* confirmation texts*/
+.confirmation-headline {
+  font-size: 2.5rem; 
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #FFF; 
+  text-align: center;
+    animation: fadeIn 1s forwards;
+}
+
+.confirmation-text {
+  font-size: 1.1rem; 
+  color: #FFF;     
+  text-align: center;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
   
   /* Animations */
   @keyframes fadeInDown {
