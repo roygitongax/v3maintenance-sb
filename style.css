@@ -118,8 +118,7 @@
   font-size: 1.1rem; 
   color: #FFF;     
   text-align: center;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1.5s;
+    animation: fadeIn 1.3s forwards;
 }
   
   /* Animations */
