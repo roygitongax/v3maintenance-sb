@@ -12,8 +12,8 @@ document.getElementById('notifyForm').addEventListener('submit', async function 
     if (response.ok) {
       // Replace the content of the .content container with the confirmation message.
       document.querySelector('.content').innerHTML = `
-        <h1 class="confirmation-headline">You're on the waiting list</h1>
-        <p class="confirmation-text">You will receive an email confirming your request</p>
+        <h1 class="confirmation-headline">You're on the waiting list🫡</h1>
+        <p class="confirmation-text">You will receive an email confirming your request.</p>
       `;
     } else {
       alert("Oops! Something went wrong. Try again.");
