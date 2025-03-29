@@ -93,7 +93,7 @@
   .spinner > div {
     width: 15px;
     height: 15px;
-    background-color: #405826;
+    background-color: #FFF;
     border-radius: 100%;
     display: inline-block;
     animation: bouncedelay 1.4s infinite ease-in-out both;
@@ -120,7 +120,29 @@
   text-align: center;
     animation: fadeIn 1.3s forwards;
 }
-  
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; 
+  display: flex;
+  align-items: center;
+}
+.logo-container img {
+  width: 10vw; /* 10% of the viewport width; adjust as needed */
+  max-width: 120px; /* Ensures it doesn't become too large on wide screens */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+/* Optionally, use media queries for further control on smaller devices */
+@media (max-width: 600px) {
+  .logo-container img {
+    width: 20vw;
+    max-width: 80px;
+  }
+}
+
   /* Animations */
   @keyframes fadeInDown {
     from {
