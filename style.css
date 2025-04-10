@@ -7,9 +7,9 @@
   body {
     font-family: 'Montserrat', 'Gill Sans', sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-              url('https://i.imgur.com/OWkXlAH.jpeg') no-repeat center center fixed;
+              url('assets/lions-home-comp.webp') no-repeat center center fixed;
   background-size: cover;
-  color: #fff; /* Using white text for better contrast */
+  color: #fff; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +82,7 @@
     background-color: #5a2d15;
   }
   
-  /* Spinner Animation */
+  /* Spinner */
   .spinner {
     margin-top: 30px;
     text-align: center;
@@ -135,7 +135,6 @@
   height: auto;  /* Maintain aspect ratio */
 }
 
-/* Optionally, use media queries for further control on smaller devices */
 @media (max-width: 600px) {
   .logo-container img {
     width: 20vw;
